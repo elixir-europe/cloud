@@ -1,0 +1,113 @@
+label: 'ELIXIR Cloud & AAI'
+tagline: 'A Driver Project of the Global Alliance for Genomics and Health'
+description: |
+  ELIXIR Cloud and AAI project provides a distributed and secure analytics platform, co-developed by members of ELIXIR-Europe andthe Global Alliance for Genomics & Health
+keywords: genomics, cloud, aai, tools, workflow, task, data, ELIXIR, GA4GH
+site_domain_name: elixir-europe.github.io/cloud
+url: 'https://elixir-europe.github.io/cloud'
+baseurl: ""
+site_parent_link: 'https://elixir-europe.github.io/cloud'
+github_organisation: elixir-europe
+show_downloads: true
+future: true
+
+# instructions for processing specific directories
+
+include:
+  - categories  # contains landing pages for each category
+  - tags        # contains landing pages for each tag
+
+collections_dir: pages
+collections:
+  general:
+    output: true
+    permalink: /general/:path/
+  events:
+    output: true
+    permalink: /events/:path/
+  people:
+    output: true
+    permalink: /people/:path/
+  howto:
+    output: true
+    permalink: /howto/:path/
+  specification:
+    output: true
+    permalink: /specification/:path/
+  minutes:
+    output: true
+    permalink: /minutes/:path/
+
+# navigation blocks can be used to separate different categories and add e.g. 
+# external link block(s), in combination with a properly modified layout
+
+nav_cat_blocks:
+  General: 'General,categories,hide'
+  related_sites: 'Related Sites,related_sites,show'
+  github_projects: 'Github Projects,github_projects,show'
+  project_funding: 'Project Funding,project_funding,show'
+
+General:
+  news: 'News & Press'
+  people: Contributors
+  events: Events
+  products: Products
+  howto: 'Examples, Guides & FAQ'
+  specification: Specifications
+  contact: Contacts
+
+categories_year_sorted:
+  - news
+  - minutes
+  - events
+
+tags_year_sorted:
+  - releases
+  - press
+  - versions
+
+related_sites:
+  'ELIXIR Compute Platform': 'https://elixir-europe.org/platforms/compute'
+  'ELIXIR Tools Platform': 'https://elixir-europe.org/platforms/tools'
+  'ELIXIR Galaxy Community': 'https://elixir-europe.org/communities/galaxy'
+  'ELIXIR Human Data Communities': 'https://elixir-europe.org/communities/human-data'
+  'ELIXIR Rare Disease Community': 'https://elixir-europe.org/communities/rare-diseases'
+  'ELIXIR Marine Metagenomics': 'https://elixir-europe.org/communities/marine-metagenomics'
+  'GA4GH': 'http://ga4gh.org'
+  'GA4GH Cloud WS': 'http://ga4gh.cloud/'
+
+github_projects:
+  'Biocontainers': 'https://github.com/BioContainers/biocontainers-backend'
+  'WES-ELIXIR': 'https://github.com/elixir-europe/WES-ELIXIR'
+  'TESK': 'https://github.com/EMBL-EBI-TSI/TESK'
+  'RDSDS': 'https://github.com/EMBL-EBI-TSI/TESK'
+
+project_funding:
+  'ELIXIR EXCELERATE': 'https://elixir-europe.org/about-us/how-funded/eu-projects/excelerate'
+  'EOSC-Hub': 'https://eosc-hub.eu'
+  'EOSC-Life': 'https://eosc-life.eu'
+  'HDR-UK': 'https://www.hdruk.ac.uk'
+
+# tag_cloud items
+
+cloud_tags:
+  - code
+  - contacts
+  - developers
+  - FAQ
+  - TRS
+  - WES
+  - TES
+  - DRS
+  - press
+  - releases
+
+# additional Jekyll instructions
+
+plugins:
+ - jekyll-seo-tag
+type: website
+navigation_max_items: 4 # number of shown links in current category
+emptyArray: []          # dummy element for array initialisation
+
+
