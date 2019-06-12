@@ -2,3 +2,7 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.ruby-gemset
+.ruby-version
+tmp/*
+.DS_Store
