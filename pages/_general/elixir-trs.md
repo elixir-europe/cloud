@@ -13,7 +13,7 @@ tags:
 
 ## {{ page.title }}
 
-<img style="float: right; width: 30px;" src="/assets/img/Biocontainers.png" />
+<img style="float: right; width: 30px;" src="{{ 'assets' | relative_url }}/img/Biocontainers.png" />
 
 (TBD)
 

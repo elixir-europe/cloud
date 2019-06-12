@@ -13,7 +13,7 @@ tags:
 
 ## {{ page.title }}
 
-<img style="float: right;width: 30px;" src="/assets/img/WES-ELIXIR.png" />
+<img style="float: right;width: 30px;" src="{{ 'assets' | relative_url }}/img/WES-ELIXIR.png" />
 
 Provides a Flask microservice implementing the [Global Alliance for Genomics and Health (GA4GH) Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API specification.
 

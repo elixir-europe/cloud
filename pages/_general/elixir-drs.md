@@ -13,7 +13,7 @@ tags:
 
 ## {{ page.title }}
 
-<img style="float: right; width: 30px;" src="/assets/img/DSDS.png" />
+<img style="float: right; width: 30px;" src="{{ 'assets' | relative_url }}/img/DSDS.png" />
 
 (TBD)
 

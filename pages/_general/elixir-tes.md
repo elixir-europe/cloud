@@ -13,14 +13,14 @@ tags:
 
 ## {{ page.title }}
 
-<img style="float: right; width: 30px;" src="/assets/img/TESK.png" />
+<img style="float: right; width: 30px;" src="{{ 'assets' | relative_url }}/img/TESK.png" />
 
 Provides an implementation of a Kubernetes based task execution engine based on the [GA4GH TES](https://github.com/ga4gh/task-execution-schemas) standard. For more details on TES, see the (very) brief [introduction to TES](https://github.com/EMBL-EBI-TSI/TESK/blob/master/documentation/tesintro.md).
 
 <!--more-->
 
 <figure>
-<img src="/assets/img/TESK-Architecture.png" alt="TESK Architecture"/>
+<img src="{{ 'assets' | relative_url }}/img/TESK-Architecture.png" alt="TESK Architecture"/>
 </figure>
 
 The project comprises of:
