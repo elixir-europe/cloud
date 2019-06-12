@@ -5,7 +5,7 @@ description: |
 keywords: genomics, cloud, aai, tools, workflow, task, data, ELIXIR, GA4GH
 site_domain_name: elixir-europe.github.io/cloud
 url: 'https://elixir-europe.github.io/cloud'
-baseurl: ""
+baseurl: "https://elixir-europe.github.io/cloud"
 site_parent_link: 'https://elixir-europe.github.io/cloud'
 github_organisation: elixir-europe
 show_downloads: true
