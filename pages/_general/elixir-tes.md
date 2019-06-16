@@ -24,15 +24,18 @@ Provides an implementation of a Kubernetes based task execution engine based on 
 </figure>
 
 The project comprises of:
-* [TESK](https://github.com/EMBL-EBI-TSI/TESK): Root project with deployment scripts
-* [tesk-api](https://github.com/EMBL-EBI-TSI/tesk-api): Contains the service that implements the TES API and translates tasks into kubernetes batch calls
-* [tesk-core](https://github.com/EMBL-EBI-TSI/tesk-core): Contains the code that is launched as images into the kubernetes cluster by tesk-api.
+
+[![EMBL-EBI-TSI/TESK](https://gh-card.dev/repos/EMBL-EBI-TSI/TESK.svg?fullname)](https://github.com/EMBL-EBI-TSI/TESK)
+
+[![EMBL-EBI-TSI/tesk-api](https://gh-card.dev/repos/EMBL-EBI-TSI/tesk-api.svg?fullname)](https://github.com/EMBL-EBI-TSI/tesk-api)
+
+[![EMBL-EBI-TSI/tesk-core](https://gh-card.dev/repos/EMBL-EBI-TSI/tesk-core.svg?fullname)](https://github.com/EMBL-EBI-TSI/tesk-core)
 
 TESK is designed with the goal to support any Kubernetes cluster, for its deployment please refer to the [deployment](https://github.com/EMBL-EBI-TSI/TESK/blob/master/documentation/deployment.md) page, the instructions provided there can be used in heterogeneous environments, with minimal configuration.
 
 ## Description
 
-Description: The first pod in the task lifecycle is the API pod, a pod which runs a web server (Tomcat) and exposes the TES specified endpoints. It consumes TES requests, validates them and translates them to Kubernetes jobs. The API pod then creates a task controller pod, or taskmaster.
+The first pod in the task lifecycle is the API pod, a pod which runs a web server (Tomcat) and exposes the TES specified endpoints. It consumes TES requests, validates them and translates them to Kubernetes jobs. The API pod then creates a task controller pod, or taskmaster.
 
 The taskmaster consumes the executor jobs, inputs and outputs. It first creates filer pod, which creates a persistent volume claim (PVC) to mount as scratch space. All mounts are initialized and all files are downloaded into the locations specified in the TES request; the populated PVC can then be used by each executor pod one after the other. After the filer has finished, the taskmaster goes through the executors and executes them as pods one by one. Note: Each TES task has a separate taskmaster, PVC and executor pods belonging to it; the only 'singleton' pod across tasks is the API pod.
 
