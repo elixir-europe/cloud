@@ -10,6 +10,7 @@ tags:
   - contacts
   - people
   - .featured
+  - .prepend
 ---
 
 {% for static_file in site.static_files %}
