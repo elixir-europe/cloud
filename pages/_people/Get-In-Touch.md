@@ -1,7 +1,7 @@
 ---
 title: "Getting in touch"
 layout: default
-image_file: "getintouch.jpg"
+image_file: "getintouch.png"
 excerpt_separator: <!--more-->
 category:
   - contact
