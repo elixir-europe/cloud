@@ -14,7 +14,8 @@ tags: # please adjust
 
 ## {{ page.title }}
 
-The ELIXIR Cloud and AAI project will be holing a Distributed Workflows on 17 June 2019 as part of ELIXIR All Hands 2019.
+The ELIXIR Cloud and AAI project will be holding a Distributed Workflows on 17 June 2019 as part of 
+ELIXIR All Hands 2019.
 
 <!--more-->
 
